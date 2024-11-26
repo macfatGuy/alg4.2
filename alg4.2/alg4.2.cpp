@@ -1,7 +1,6 @@
 ﻿#include <iostream>
 #include <vector>
 
-// Function to print a dynamic array with underscore for unused space
 void print_dynamic_array(int* arr, int logical_size, int actual_size) {
     for (int i = 0; i < actual_size; ++i) {
         if (i < logical_size) {
@@ -14,7 +13,7 @@ void print_dynamic_array(int* arr, int logical_size, int actual_size) {
     std::cout << std::endl;
 }
 
-// Function to append a new element to the dynamic array
+
 void append_to_dynamic_array(int*& arr, int& logical_size, int& actual_size, int newElement) {
     if (logical_size < actual_size) {
         arr[logical_size++] = newElement;
